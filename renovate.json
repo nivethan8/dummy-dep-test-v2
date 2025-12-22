@@ -193,6 +193,16 @@
         "security",
         "devrev:don:core:dvrv-us-1:devo/15U9WWPkGG:issue/2"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "uuid"
+      ],
+      "allowedVersions": ">=latest",
+      "labels": [
+        "security",
+        "devrev:don:core:dvrv-us-1:devo/15U9WWPkGG:issue/2"
+      ]
     }
   ]
 }
