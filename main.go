@@ -3,12 +3,17 @@ package main
 import (
 	"context"
 	"fmt"
+	"math/rand"
 	"time"
 
-	"github.com/google/uuid"
 	"go.uber.org/zap"
 	"golang.org/x/sync/errgroup"
 )
+
+// generateID generates a simple random ID
+func generateID() string {
+	return fmt.Sprintf("%d-%d", time.Now().UnixNano(), rand.Int63())
+}
 
 func main() {
 	logger, err := zap.NewProduction()
@@ -18,7 +23,7 @@ func main() {
 	defer logger.Sync()
 
 	logger.Info("Starting dummy application",
-		zap.String("app_id", uuid.New().String()),
+		zap.String("app_id", generateID()),
 		zap.Time("started_at", time.Now()),
 	)
 
@@ -45,7 +50,7 @@ func run(ctx context.Context, logger *zap.Logger) error {
 }
 
 func processTask(ctx context.Context, logger *zap.Logger, taskID int) error {
-	taskUUID := uuid.New().String()
+	taskUUID := generateID()
 	logger.Info("Processing task",
 		zap.Int("task_id", taskID),
 		zap.String("task_uuid", taskUUID),
