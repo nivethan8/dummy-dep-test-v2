@@ -457,6 +457,22 @@
         "Security vulnerability fix"
       ],
       "commitMessageSuffix": "[DevRev: don:core:dvrv-us-1:devo/15U9WWPkGG:issue/4]"
+    },
+    {
+      "matchPackageNames": [
+        "gin"
+      ],
+      "allowedVersions": ">=latest",
+      "labels": [
+        "security",
+        "devrev:don:core:dvrv-us-1:devo/15U9WWPkGG:issue/4"
+      ],
+      "prTitle": "{{{depName}}} security update to {{{newVersion}}} [DevRev: don:core:dvrv-us-1:devo/15U9WWPkGG:issue/4]",
+      "prBodyNotes": [
+        "DevRev Ticket: don:core:dvrv-us-1:devo/15U9WWPkGG:issue/4",
+        "Security vulnerability fix"
+      ],
+      "commitMessageSuffix": "[DevRev: don:core:dvrv-us-1:devo/15U9WWPkGG:issue/4]"
     }
   ]
 }
