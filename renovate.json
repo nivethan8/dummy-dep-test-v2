@@ -5,6 +5,13 @@
   ],
   "packageRules": [
     {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "enabled": false,
+      "description": "Disable automatic PRs - only create PRs for explicitly enabled packages"
+    },
+    {
       "matchPackageNames": [
         "uuid"
       ],
@@ -473,6 +480,23 @@
         "Security vulnerability fix"
       ],
       "commitMessageSuffix": "[DevRev: don:core:dvrv-us-1:devo/15U9WWPkGG:issue/4]"
+    },
+    {
+      "matchPackageNames": [
+        "mux` v1.8.0"
+      ],
+      "enabled": true,
+      "allowedVersions": ">=latest",
+      "labels": [
+        "security",
+        "devrev:don:core:dvrv-us-1:devo/15U9WWPkGG:issue/5"
+      ],
+      "prTitle": "{{{depName}}} security update to {{{newVersion}}} [DevRev: don:core:dvrv-us-1:devo/15U9WWPkGG:issue/5]",
+      "prBodyNotes": [
+        "DevRev Ticket: don:core:dvrv-us-1:devo/15U9WWPkGG:issue/5",
+        "Security vulnerability fix"
+      ],
+      "commitMessageSuffix": "[DevRev: don:core:dvrv-us-1:devo/15U9WWPkGG:issue/5]"
     }
   ]
 }
