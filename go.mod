@@ -6,7 +6,7 @@ require (
 	github.com/gin-gonic/gin v1.8.0
 	github.com/gorilla/mux v1.8.0
 	github.com/lib/pq v1.10.0
-	github.com/sirupsen/logrus v1.8.0
+	github.com/sirupsen/logrus v1.9.3
 	go.uber.org/zap v1.21.0
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e
 	golang.org/x/sync v0.3.0
@@ -30,7 +30,7 @@ require (
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/net v0.0.0-20211112202133-69e39bad7dc2 // indirect
-	golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069 // indirect
+	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
 	golang.org/x/text v0.3.6 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
