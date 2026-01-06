@@ -26,6 +26,22 @@
         "DevRev Ticket: ISS-9",
         "Security vulnerability fix"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "go.uber.org/zap"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-10"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-10]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-10",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
