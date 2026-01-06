@@ -58,6 +58,22 @@
         "DevRev Ticket: ISS-11",
         "Security vulnerability fix"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "gopkg.in/yaml.v2"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-12"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-12]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-12",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
