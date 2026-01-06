@@ -10,6 +10,23 @@
       ],
       "enabled": false,
       "description": "Disable automatic PRs - only create PRs for explicitly enabled packages"
+    },
+    {
+      "matchPackageNames": [
+        "go.uber.org/zap"
+      ],
+      "enabled": true,
+      "allowedVersions": ">=latest",
+      "labels": [
+        "security",
+        "devrev:ISS-6"
+      ],
+      "prTitle": "{{{depName}}} security update to {{{newVersion}}} [DevRev: ISS-6]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-6",
+        "Security vulnerability fix"
+      ],
+      "commitMessageSuffix": "[DevRev: ISS-6]"
     }
   ]
 }
