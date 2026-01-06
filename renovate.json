@@ -10,6 +10,22 @@
       ],
       "enabled": false,
       "description": "Disable automatic PRs - only create PRs for explicitly enabled packages"
+    },
+    {
+      "matchPackageNames": [
+        "go.uber.org/atomic"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-9"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-9]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-9",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
