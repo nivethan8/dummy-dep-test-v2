@@ -74,6 +74,22 @@
         "DevRev Ticket: ISS-12",
         "Security vulnerability fix"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "github.com/sirupsen/logrus"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-13"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-13]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-13",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
