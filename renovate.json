@@ -90,6 +90,22 @@
         "DevRev Ticket: ISS-13",
         "Security vulnerability fix"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "golang.org/x/crypto"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-14"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-14]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-14",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
