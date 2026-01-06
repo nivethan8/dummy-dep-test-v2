@@ -42,6 +42,22 @@
         "DevRev Ticket: ISS-10",
         "Security vulnerability fix"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "golang.org/x/sync"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-11"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-11]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-11",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
