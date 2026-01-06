@@ -3,7 +3,7 @@ module github.com/nivethan8/dummy-dep-test-v2
 go 1.24.3
 
 require (
-	go.uber.org/zap v1.21.0
+	go.uber.org/zap v1.27.1
 	golang.org/x/sync v0.3.0
 )
 
