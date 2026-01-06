@@ -6,7 +6,12 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/gin-gonic/gin"
+	"github.com/gorilla/mux"
+	_ "github.com/lib/pq"
+	"github.com/sirupsen/logrus"
 	"go.uber.org/zap"
+	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -16,11 +21,23 @@ func generateID() string {
 }
 
 func main() {
+	// Initialize various loggers
 	logger, err := zap.NewProduction()
 	if err != nil {
 		panic(fmt.Sprintf("failed to initialize logger: %v", err))
 	}
 	defer logger.Sync()
+
+	logrus.SetFormatter(&logrus.JSONFormatter{})
+	logrus.Info("Logrus initialized")
+
+	// Initialize HTTP routers (not used, just to include dependencies)
+	_ = gin.New()
+	_ = mux.NewRouter()
+
+	// Test bcrypt
+	hashedPassword, _ := bcrypt.GenerateFromPassword([]byte("test"), bcrypt.DefaultCost)
+	logger.Info("Password hashed", zap.Int("hash_length", len(hashedPassword)))
 
 	logger.Info("Starting dummy application",
 		zap.String("app_id", generateID()),
