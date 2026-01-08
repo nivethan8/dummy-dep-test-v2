@@ -170,6 +170,22 @@
         "DevRev Ticket: ISS-17",
         "Security vulnerability fix"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "github.com/goccy/go-json"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-18"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-18]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-18",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
