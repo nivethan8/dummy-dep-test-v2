@@ -122,6 +122,22 @@
         "DevRev Ticket: ISS-15",
         "Security vulnerability fix"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "github.com/lib/pq"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-15"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-15]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-15",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
