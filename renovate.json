@@ -186,6 +186,22 @@
         "DevRev Ticket: ISS-18",
         "Security vulnerability fix"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "github.com/mattn/go-isatty"
+      ],
+      "enabled": true,
+      "labels": [
+        "security",
+        "devrev:ISS-19"
+      ],
+      "commitMessageTopic": "{{{depName}}} security update",
+      "commitMessageSuffix": "[DevRev: ISS-19]",
+      "prBodyNotes": [
+        "DevRev Ticket: ISS-19",
+        "Security vulnerability fix"
+      ]
     }
   ]
 }
