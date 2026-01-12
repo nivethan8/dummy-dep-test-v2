@@ -7,7 +7,7 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/lib/pq v1.10.0
 	github.com/sirupsen/logrus v1.8.0
-	go.uber.org/zap v1.21.0
+	go.uber.org/zap v1.27.1
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e
 	golang.org/x/sync v0.3.0
 )
