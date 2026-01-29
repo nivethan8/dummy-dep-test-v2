@@ -5,7 +5,7 @@ go 1.24.3
 require (
 	github.com/gin-gonic/gin v1.8.0
 	github.com/gorilla/mux v1.8.0
-	github.com/lib/pq v1.10.0
+	github.com/lib/pq v1.11.0
 	github.com/sirupsen/logrus v1.8.0
 	go.uber.org/zap v1.21.0
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e
